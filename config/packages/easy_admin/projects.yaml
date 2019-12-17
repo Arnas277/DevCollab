@@ -1,0 +1,16 @@
+easy_admin:
+  entities:
+    Projects:
+      class: App\Entity\Projects
+      label: Project Listings
+      list:
+        actions:
+          - { name: edit, icon: pencil, label: ''}
+          - { name: show, icon: eye, label: '' }
+          - { name: delete, icon: eraser, label: '' }
+        fields:
+          - { property: 'id', label: 'ID'}
+          - { property: 'title', label: 'Project Title'}
+          - { property: 'repository', label: 'Repository'}
+          - { property: 'created', label: 'Created'}
+          - { property: 'deadline', label: 'Deadline'}

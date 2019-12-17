@@ -1,0 +1,18 @@
+easy_admin:
+  entities:
+    Skills:
+      class: App\Entity\Skills
+      list:
+        actions:
+          - { name: edit, icon: pencil, label: ''}
+          - { name: show, icon: eye, label: '' }
+          - { name: delete, icon: eraser, label: '' }
+        title: "User %%entity_label%% List"
+        filters:
+          - { property: 'id', label: 'ID'}
+          - { property: 'user_id',label: "User ID" }
+          - { property: 'skill',label: "Skill" }
+        fields:
+          - { property: 'id', label: 'ID'}
+          - { property: 'user_id',label: "User ID" }
+          - { property: 'skill',label: "Skill" }
